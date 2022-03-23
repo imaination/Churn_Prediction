@@ -10,14 +10,13 @@ File set up for this project:
 
 code/ : contains all the code (.py, .ipynb) used in the project<br />
 data/ : contains original data & transformed data<br />
-old/ : contains old codes to be discarded<br />
 
 
 code/ :
 
 - load_data.py (reads and copies data provided the base path, returns a dictionary of dataframes)<br />
 - get_base_data.ipynb (merges training data)<br />
-- pipeline_v02.ipynb (reads merged data, preprocesses data, and fits a model)<br />
+- pipeline.ipynb (reads merged data, preprocesses data, and fits a model)<br />
   -did not tune any hyperparameters, just made a basic pipeline<br />
     
               -Things to work on:
