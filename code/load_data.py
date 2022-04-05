@@ -9,22 +9,20 @@ def get_file_names(mypath):
     files = dict()
     for csv in csv_data:
         name = re.split('\.', csv)
-        f_name = name[0]#csv[:-4]
+        f_name = name[0]
         print('file name: {}'.format(f_name))
         files[f_name] = csv
-    return(files)
+    return files
 
 
 def load_copy_data(files, mypath):
-    #load data
     frames = dict()
     for f_name, file in files.items():
-        #print(f_name, file)
         name = f_name
-        f_name = pd.read_csv(mypath + file, encoding = "UTF-8", low_memory=False)
+        f_name = pd.read_csv(mypath + file, encoding="UTF-8", low_memory=False)
         f_name_c = f_name.copy()
         frames[name] = f_name_c
-    return(frames)
+    return frames
 
 
 def calc_missing (df):
