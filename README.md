@@ -15,22 +15,23 @@ data/ : contains original data & transformed data<br />
 code/ :
 
 - load_data.py (reads and copies data provided the base path, returns a dictionary of dataframes)<br />
-- get_base_data.ipynb (merges training data)<br />
-- pipeline.ipynb (reads merged data, preprocesses data, and fits a model)<br />
-  -did not tune any hyperparameters, just made a basic pipeline<br />
-    
-              -Things to work on:
-              
-                  #preprocess data
-                      #dimension reduction (pca, automatic relavance determination, etc.)
-                      #add features (use automated methods?)
-                      #over sample/under sample to balance data?
+- Get_Base_Data_00.ipynb (merges training/test data)<br />
+- Explore_Data_01.ipynb (exploratory data analysis)<br />
+- Manual_Preprocess_02.ipynb (preprocess training/val/test data)<br />
+- Model_Pipeline_03.ipynb (fits a model)<br />
+- Prediction_04.ipynb (prediction on test data & outputs on specified format)<br />
+  
+-May still work on:<br />
 
-                  #model
-                      #try different models
-                      #tune hyper parameters
-                     
-                  #model evaluation
+        #preprocess data
+            #dimension reduction (pca, automatic relavance determination, etc.)
+            #add features (use automated methods?)-> extra_automated_feature_engineering.ipynb
+
+        #model
+            #try different models
+            #tune hyper parameters -> 5_hypertuning.ipynb
+
+        #model evaluation (identify important features, etc.)
 
 - pipeline_simple_example.ipynb (a simple example of how to use a pipeline)
 
